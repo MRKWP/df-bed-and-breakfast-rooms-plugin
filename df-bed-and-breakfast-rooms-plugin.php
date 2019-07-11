@@ -20,6 +20,7 @@ define('DF_BNB_ROOM_DIR', __DIR__);
 define('DF_BNB_ROOM_URL', plugins_url('/' . basename(__DIR__)));
 
 require_once DF_BNB_ROOM_DIR . '/vendor/autoload.php';
+require_once DF_BNB_ROOM_DIR . '/acf.php';
 
 $container = \DF_BNB_ROOM\Container::getInstance();
 $container['plugin_name'] = 'Bed & Breakfast Rooms Plugin';

@@ -67,6 +67,8 @@ class Container extends PimpleContainer
         // register custom posts
         $this['custom_posts']->register();
 
+         add_shortcode('rooms-list-grid', array($this['shortcodes'], 'rooms_list_grid'));
+
         // divi module register.
         // add_action('et_builder_ready', array($this['divi_modules'], 'register'), 1);
 
